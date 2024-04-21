@@ -75,11 +75,14 @@ start /wait dotnet-runtime-7.0.18-win-x64.exe
 curl -L -O https://github.com/l-urk/SplitWin/releases/download/v1.1.1/SplitWinv1.1.1.zip
 tar -xf SplitWinv1.1.1.zip
 move SplitWin "%HomeDrive%\Shell\SplitWin"
+del %HomeDrive%\Shell\SplitWin\system_files\Modules\ccp.ps1
+curl -L -O https://github.com/l-urk/SplitWin/releases/download/v1.1.1/SplitWinv1.1.1.zip
+curl -L -O https://raw.githubusercontent.com/l-urk/SplitWin/main/Split%20Win%20L_System/system_files/Modules/ccp.ps1
+move ccp.ps1 %HomeDrive%\Shell\SplitWin\system_files\Modules\ccp.ps1
+
 
 reg add "HKEY_CURRENT_USER\Control Panel\Desktop" /v Wallpaper /t REG_SZ /d "" /f
 RUNDLL32.EXE user32.dll,UpdatePerUserSystemParameters
 %SystemRoot%\System32\rundll32.exe user32.dll,UpdatePerUserSystemParameters 1, True
 taskkill /im explorer.exe /f
 start explorer.exe
-
-
