@@ -1,7 +1,7 @@
 # LSD
 **Live System Drive**
 
-Better Windows 11 only 12.1.
+Better Windows 11 only 12.1
 
 ![25426](https://github.com/kil-l-Y/LSD/assets/140209311/352b2f88-9e52-40bf-ac04-9e06cfa94780)
 ![cap3](https://github.com/kil-l-Y/LSD/assets/140209311/5cf4436e-1a5d-4ae5-a6a8-1ab2f299be92)
